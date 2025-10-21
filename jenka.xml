@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ Created in honour of one of my favourite games.
+ Cave Story Doukutsu Monogatari by Daisuke “Pixel” Amaya in 2004.
+ For more information: cavestory.org
+
+-->
+<style-scheme id="jenka" _name="Jenka" version="1.0">
+  <author>Kit</author>
+  <_description>Based on the Labyrinth's pallete from the game Cave Story</_description>
+
+  <!-- Labyrinth Palette -->
+    <!-- bkMaze -->
+  <color name="bkMstone1"                   value="#004219"/>
+  <color name="bkMstone2"                   value="#002717"/>
+  <color name="bkMstone3"                   value="#000015"/>
+  <color name="bkMmetal1"                   value="#426b25"/>
+  <color name="bkMmetal2"                   value="#3e552d"/>
+  <color name="bkMmetal3"                   value="#293f2a"/>
+  <color name="bkMmetal4"                   value="#001000"/>
+    <!-- PrtMaze -->
+  <color name="ground1"                     value="#a9883e"/>
+  <color name="ground2"                     value="#8b7039"/>
+  <color name="ground3"                     value="#000010"/>
+  <color name="water1"                      value="#eafbff"/>
+  <color name="water2"                      value="#429cc1"/>
+  <color name="water3"                      value="#104e7b"/>
+    <!-- NpcGuest (Dr Gero & Nurse Hasumi) -->
+  <color name="gero1"                       value="#7bda21"/>
+  <color name="gero2"                       value="#198821"/>
+  <color name="hasumi"                      value="#f36b4e"/>
+  <color name="labcoat1"                    value="#efeae2"/>
+  <color name="labcoat2"                    value="#9cadc1"/>
+  <color name="redcross"                    value="#ff2500"/>
+    <!-- NpcMaze -->
+  <color name="roach1"                      value="#ffa510"/>
+  <color name="roach2"                      value="#aa7513"/>
+  <color name="roach3"                      value="#554516"/>
+  <color name="roach4"                      value="#000800"/>
+  <color name="fan1"                        value="#4a84ff"/>
+  <color name="fan2"                        value="#294ca6"/>
+  <color name="fan3"                        value="#08154e"/>
+  <color name="critter1"                    value="#d694ff"/>
+  <color name="critter2"                    value="#a054e0"/>
+  <color name="critter3"                    value="#6b15c1"/>
+
+  <!-- Global Settings -->
+  <style name="text"                        foreground="labcoat1" background="roach4"/>
+  <style name="selection"                   foreground="water1" background="bkMmetal1"/>
+  <style name="cursor"                      foreground="labcoat1"/>
+  <style name="secondary-cursor"            foreground="critter1"/>
+  <style name="line-numbers"                foreground="gero2" background="bkMmetal4"/>
+  <style name="current-line"                background="bkMstone2"/>
+  <style name="current-line-number"         foreground="gero1" background="bkMstone1" bold="true"/>
+  <style name="draw-spaces"                 foreground="roach3"/>
+  <style name="background-pattern"          background="roach3"/>
+  <style name="snippet-focus"               foreground="ground3" background="ground2"/>
+
+  <!-- Bracket Matching -->
+  <style name="bracket-match"               foreground="fan1" background="bkMstone3" bold="true"/>
+  <style name="bracket-mismatch"            foreground="ground3" background="redcross"/>
+
+  <!-- Right Margin -->
+  <style name="right-margin"                foreground="water1" background="bkMstone1"/>
+
+  <!-- Search Matching -->
+  <style name="search-match"                foreground="bkMstone3" background="fan1"/>
+
+  <!-- Comments -->
+  <style name="def:comment"                 foreground="ground1" italic="true"/>
+  <style name="def:shebang"                 foreground="ground1" bold="true"/>
+  <style name="def:doc-comment-element"     italic="true"/>
+
+  <!-- Constants -->
+  <style name="def:constant"                foreground="roach1"/>
+  <style name="def:string"                  foreground="roach1"/>
+  <style name="def:special-char"            foreground="hasumi"/>
+  <style name="def:special-constant"        foreground="hasumi"/>
+  <style name="def:floating-point"          foreground="hasumi"/>
+
+  <!-- Identifiers -->
+  <style name="def:identifier"              foreground="critter1"/>
+
+  <!-- Statements -->
+  <style name="def:statement"               foreground="water1" bold="true"/>
+
+  <!-- Types -->
+  <style name="def:type"                    foreground="gero1" bold="true"/>
+
+  <!-- Markup -->
+  <style name="def:emphasis"                italic="true"/>
+  <style name="def:strong-emphasis"         foreground="water1" bold="true"/>
+  <style name="def:inline-code"             foreground="critter1"/>
+  <style name="def:insertion"               underline="single"/>
+  <style name="def:deletion"                strikethrough="true"/>
+  <style name="def:link-text"               foreground="critter1"/>
+  <style name="def:link-symbol"             foreground="critter1" bold="true"/>
+  <style name="def:link-destination"        italic="true" underline="single"/>
+  <style name="def:heading"                 foreground="gero1" bold="true"/>
+  <style name="def:thematic-break"          foreground="gero1" bold="true"/>
+  <style name="def:preformatted-section"    foreground="critter1"/>
+  <style name="def:list-marker"             foreground="water1" bold="true"/>
+
+  <!-- Others -->
+  <style name="def:preprocessor"            foreground="fan1"/>
+  <style name="def:error"                   underline="error" underline-color="redcross"/>
+  <style name="def:warning"                 foreground="ground3" background="redcross"/>
+  <style name="def:note"                    foreground="roach1" background="ground3" bold="true"/>
+  <style name="def:net-address"             italic="true" underline="single"/>
+
+  <!-- Heading styles, uncomment to enable -->
+  <!--
+  <style name="def:heading0"                scale="5.0"/>
+  <style name="def:heading1"                scale="2.5"/>
+  <style name="def:heading2"                scale="2.0"/>
+  <style name="def:heading3"                scale="1.7"/>
+  <style name="def:heading4"                scale="1.5"/>
+  <style name="def:heading5"                scale="1.3"/>
+  <style name="def:heading6"                scale="1.2"/>
+  -->
+
+  <!-- Language specific -->
+  <style name="diff:added-line"             foreground="critter1"/>
+  <style name="diff:removed-line"           foreground="hasumi"/>
+  <style name="diff:changed-line"           foreground="fan1"/>
+  <style name="diff:diff-file"              use-style="def:type"/>
+  <style name="diff:location"               use-style="def:statement"/>
+  <style name="diff:special-case"           use-style="def:statement"/>
+
+  <style name="xml:namespace"               bold="true"/>
+  
+  <style name="json:keyname"                foreground="gero1"/>
+
+  <style name="latex:command"               foreground="gero1" bold="true"/>
+  <style name="latex:include"               use-style="def:preprocessor"/>
+
+  <style name="sh:variable"                 foreground="roach1"/>
+  <style name="sh:variable-definition"      foreground="gero1"/>
+  
+</style-scheme>
